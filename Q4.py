@@ -1,3 +1,4 @@
+#Take Input of the marks of the students
 marks_of_student1=int(input("marks of student1:- "))
 marks_of_student2=int(input("marks of student2:- "))
 marks_of_student3=int(input("marks of student3:- "))
