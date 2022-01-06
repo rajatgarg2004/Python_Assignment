@@ -1,3 +1,4 @@
+#Making colour list of the given colors
 colour_list=['Red','Green', 'White', 'Black', 'Pink', 'Yellow']
 #To remove several elememts we use del function
 del colour_list[3:5]            
