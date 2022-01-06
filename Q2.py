@@ -1,4 +1,6 @@
+#Take input of the gross income
 Gross_income=float(input("Gross Income in Dollars(USD):- "))
+#Take input of the number of dependents
 Number_of_dependents=int(input("Number of Dependents:- "))
 #Taxable income = Gross Income - Standard deduction-(Dependent deduction * No. of dependents)
 #Standard Deduction=10000$, Dependent Deduction=3000$
