@@ -29,4 +29,4 @@ Q5(a).
 The list after removing the 4th element :- ['Red', 'Green', 'White', 'Pink', 'Yellow']
  
 Q5(b).
-The updated colour list :- ['Red', 'Green', 'White', 'Purple', 'Purple', 'Yellow']
+The updated colour list after removing "Black" and "Pink" and replacing them with "Purple" :- ['Red', 'Green', 'White', 'Purple', 'Yellow']
