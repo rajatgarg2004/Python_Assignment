@@ -57,10 +57,10 @@ colour_list=['Red','Green', 'White', 'Black', 'Pink', 'Yellow']
 #To remove an element we use pop function
 colour_list.pop(3)
 print('The list after removing the 4th element :-', colour_list, '\n')
-
 #Q5(b)
 #Making colour list of the given colors
 colour_list=['Red','Green', 'White', 'Black', 'Pink', 'Yellow']
-#To replace the colours with "Purple" the following can be done
-colour_list[4]=colour_list[3]="Purple"
-print('The updated colour list :-', colour_list, '\n')
+#To add an element we use insert function
+colour_list.insert(3, "Purple")          
+print('The updated colour list after removing "Black" and "Pink" and replacing them with "Purple" :-', colour_list[0:4] + colour_list[6:], '\n')
+
