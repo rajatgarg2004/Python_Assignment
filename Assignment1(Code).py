@@ -1,66 +1,132 @@
 #Q1
-#Take input for 3 integers
-num1=int(input("Write your first number:-"))
-num2=int(input("Write your third number:-"))
-num3=int(input("Write your second number:-"))
-#The formula for average of the 3 numbers is
-average=float((num1+num2+num3)/3) 
-print('The average of the 3 numbers is ', average, '\n')
+
+#Forming the given string.
+a=str('Python is a case sensitive language')
+#(a)
+
+#For length of the string we use len() function.
+print(len(a))
+#(b)
+
+#Reversing the string using slicing.
+str_reverse=a[::-1]
+print(str_reverse)
+#(c)
+
+#Using slicing to make another string.
+new_string=a[10:26]
+print(new_string)
+#(d)
+
+#Replacing "a case sensitive" with "object oriented" using replace() function.
+a_replace=a.replace("a case sensitive", "object oriented")
+print(a_replace)
+#(e)
+
+#To find the location of the substring we use index() function.
+print(a.index("a"))
+#(f)
+
+#To remove white spaces we can replace the white space with no space.
+print(a.replace(" ", ""))
+
+print("\n")
 
 #Q2
-#Take input of the gross income
-Gross_income=float(input("Gross Income in Dollars(USD):- "))
-#Take input of the number of dependents
-Number_of_dependents=int(input("Number of Dependents:- "))
-#Taxable income = Gross Income - Standard deduction-(Dependent deduction * No. of dependents)
-#Standard Deduction=10000$, Dependent Deduction=3000$
-Taxable_income=float(Gross_income-10000-3000*Number_of_dependents)
-#Tax = Taxable income * Tax Rate
-#Tax Rate=20%
-Tax=float(Taxable_income*20/100)
-if Tax>0:
-    print("Your Tax is ", Tax, "$", '\n')
-else:
-        print('Your income tax is not valid', '\n')
+
+#Storing name,SID, department name and CGPA in respective variables.
+
+name="Rajat Garg"
+SID=21104032
+department_name="EE"
+CGPA="9.9"
+
+print("Hey,%s Here!"%(name))
+print("My SID is %d"%(SID))
+print("I am from %s department and my CGPA is %s"%(department_name,CGPA))
+
+print("\n")
+
 
 #Q3
-#Take input of the Student ID
-SID=int(input("Write your SID:- "))
-#Take input of the name 
-Name=str(input("Write your Full Name:- "))
-#Take input of the Gender
-Gender=str(input("Write your Gender(M/F/U):- "))
-#Take input of of the course pursued
-Course=str(input("Write your Course Name:- "))
-#Take input of the CGPA
-CGPA=float(input("Write your CGPA:- "))
-#StudentID in List format 
-Student= [SID, Name, Gender, Course, CGPA]
-print("Student:- ", Student, '\n')
+# Initiating a and b with values 56 and 10 respectively
+a=56
+b=10
+
+#(a)
+# Implementing bit-wise operator & (and)
+print(a&b)
+
+#(b)
+# Implementing bit-wise operator | (or)
+print(a|b)
+#(c)
+#Implementing bit-wise operator ^ (XOR)
+print(a^b)
+
+#(d)
+# Implementing bit-wise operator << (left shift)
+a1=a<<2
+
+b1=b<<2
+
+print(a1)
+print(b1)
+
+#(e)
+# Implementing bit-wise operator >> ( right shift operator)
+a2=a>>2
+
+b2=b>>4
+
+print(a2)
+print(b2)
+
+print("\n")
 
 #Q4
-#Take Input of the marks of the students
-marks_of_student1=int(input("Marks of student1:- "))
-marks_of_student2=int(input("Marks of student2:- "))
-marks_of_student3=int(input("Marks of student3:- "))
-marks_of_student4=int(input("Marks of student4:- "))
-marks_of_student5=int(input("Marks of student5:- "))
-#x is the list in unsorted order
-x=[marks_of_student1, marks_of_student2, marks_of_student3, marks_of_student4, marks_of_student5]
-#to sort the elements in list we use variable.sort() function
-x.sort()
-print("Marks in sorted list:- ", x, '\n')
+#Taking input of three numbers as integers.
+first_number=int(input("Enter the first number:- "))
+second_number=int(input("Enter the second number:- "))
+third_number=int(input("Enter the third number:- "))
 
-#Q5(a)
-#Making colour list of the given colors
-colour_list=['Red','Green', 'White', 'Black', 'Pink', 'Yellow']
-#To remove an element we use pop function
-colour_list.pop(3)
-print('The list after removing the 4th element :-', colour_list, '\n')
+#Using (if,else) conditional to find the greatest integer.
+if (first_number>second_number) & (first_number>third_number):
+    print(first_number)
+elif (second_number>first_number) &(second_number>third_number):
+        print(second_number)
+elif (first_number==second_number==third_number):
+    print("All are equal")
+else:
+    print(third_number)
 
-#Q5(b)
-#Making colour list of the given colors
-colour_list=['Red','Green', 'White', 'Black', 'Pink', 'Yellow']
-#To add an element we use insert function
-colour_list.insert(3, "Purple")          
-print('The updated colour list after removing "Black" and "Pink" and replacing them with "Purple" :-', colour_list[0:4] + colour_list[6:], '\n')
+print("\n")
+
+#Q5
+
+#Taking input statement
+a=str(input("Write your sentence or word and I will tell you whether it contains 'name' or not:- \n"))
+#Using (if,else) conditionals
+if 'name' in a:
+    print("Yes")
+else:
+    print("No")
+
+print("\n")
+
+#Q6
+#Taking sides as input
+first_side=float(input("Enter the first side of the triangle:- "))
+second_side=float(input("Enter the second side of the triangle:- "))
+third_side=float(input("Enter the third side of the triangle:- "))
+#converting float to integer
+first_side=int(first_side)
+second_side=int(second_side)
+third_side=int(third_side)
+#Using (if,else) conditional
+if(first_side+second_side>third_side)&(first_side+third_side>second_side)&(third_side+second_side>first_side):
+    print("The triangle can be formed")
+else:
+    print("The triangle cannot be formed")
+
+    print("\n")
