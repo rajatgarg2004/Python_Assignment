@@ -66,21 +66,21 @@ print(a^b)
 
 #(d)
 # Implementing bit-wise operator << (left shift)
-a1=a<<2
+a_new1=a<<2
 
-b1=b<<2
+b_new1=b<<2
 
-print(a1)
-print(b1)
+print(a_new1)
+print(b_new1)
 
 #(e)
 # Implementing bit-wise operator >> ( right shift operator)
-a_new=a>>2
+a_new2=a>>2
 
-b_new=b>>4
+b_new2=b>>4
 
-print(a_new)
-print(b_new)
+print(a_new2)
+print(b_new2)
 
 print("\n")
 
