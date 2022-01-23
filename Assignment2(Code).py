@@ -116,13 +116,9 @@ print("\n")
 
 #Q6
 #Taking sides as input
-first_side=float(input("Enter the first side of the triangle:- "))
-second_side=float(input("Enter the second side of the triangle:- "))
-third_side=float(input("Enter the third side of the triangle:- "))
-#Converting float to integer
-first_side=int(first_side)
-second_side=int(second_side)
-third_side=int(third_side)
+first_side=int(input("Enter the first side of the triangle:- "))
+second_side=int(input("Enter the second side of the triangle:- "))
+third_side=int(input("Enter the third side of the triangle:- "))
 #Using (if,else) conditional
 if(first_side+second_side>third_side)&(first_side+third_side>second_side)&(third_side+second_side>first_side):
     print("The triangle can be formed")
