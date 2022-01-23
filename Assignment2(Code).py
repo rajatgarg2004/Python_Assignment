@@ -75,12 +75,12 @@ print(b1)
 
 #(e)
 # Implementing bit-wise operator >> ( right shift operator)
-a2=a>>2
+a_new=a>>2
 
-b2=b>>4
+b_new=b>>4
 
-print(a2)
-print(b2)
+print(a_new)
+print(b_new)
 
 print("\n")
 
@@ -119,7 +119,7 @@ print("\n")
 first_side=float(input("Enter the first side of the triangle:- "))
 second_side=float(input("Enter the second side of the triangle:- "))
 third_side=float(input("Enter the third side of the triangle:- "))
-#converting float to integer
+#Converting float to integer
 first_side=int(first_side)
 second_side=int(second_side)
 third_side=int(third_side)
