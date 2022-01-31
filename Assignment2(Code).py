@@ -120,7 +120,7 @@ first_side=int(input("Enter the first side of the triangle:- "))
 second_side=int(input("Enter the second side of the triangle:- "))
 third_side=int(input("Enter the third side of the triangle:- "))
 #Using (if,else) conditional
-if(first_side+second_side>third_side)&(first_side+third_side>second_side)&(third_side+second_side>first_side):
+if(first_side+second_side>=third_side)&(first_side+third_side>=second_side)&(third_side+second_side>=first_side):
     print("The triangle can be formed")
 else:
     print("The triangle cannot be formed")
