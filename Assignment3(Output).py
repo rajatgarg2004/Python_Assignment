@@ -13,8 +13,6 @@ The occurence of:
 --------------------------------------------------------------------------------
 
 Question 2
-To find the next date:- 
-
 Enter the Day: 29
 Enter the Month: 02
 Enter the year: 2004
@@ -23,9 +21,9 @@ The Next Date is :  1/3/2004
 --------------------------------------------------------------------------------
 
 Question 3
-Enter the list of numbers(Also add space between 2 numbers): 1 5 3 25 7
+Enter the list of numbers(Also add space between 2 numbers): 1 8 20 21 17
 
-[(1, 1), (5, 25), (3, 9), (25, 625), (7, 49)]
+[(1, 1), (8, 64), (20, 400), (21, 441), (17, 289)]
 
 --------------------------------------------------------------------------------
 
@@ -65,7 +63,7 @@ Rajat Garg
 
 Question 7
 Enter the number of fibonacci terms you want:- 
-8
+9
 0
 1
 1
@@ -74,7 +72,8 @@ Enter the number of fibonacci terms you want:-
 5
 8
 13
-The Average of the numbers is:- 4.125
+21
+The Average of the numbers is:- 6.0
 
 --------------------------------------------------------------------------------
 
@@ -99,6 +98,10 @@ d.)
 {6, 7, 8, 9, 10} 
 
 e.) 
+
+{10, 7}
+
+--------------------------------------------------------------------------------
 
 {10, 7}
 
