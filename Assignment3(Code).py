@@ -28,86 +28,50 @@ print()
 print("Question 2")
 #Defining a function of leap year
 
-def is_leap(year):
-    
+def is_leap(year: int):                                                                                
     if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
         return True
     else:
         return False
-print("To find the next date:- \n")
-#To continue or break loop for the date given
-
-while(True):
+while True:
     day= int(input("Enter the Day: "))
     month=int(input("Enter the Month: "))
     year=int(input("Enter the year: "))
-    
-    if month<1 or month>12:
-        print("Date entered is out of range.")
-    
-    elif day<1 or day>31:
-        print("Date entered is out of range.")
-    
-    elif year<1800 or year>2025:
-        print("Date entered is out of range.")
-    
-    elif month in [4,6,9,11]:
-        if day<=30:
+    if (day < 1) or (day > 31) or (month < 1) or (month > 12) or (year < 1800) or (year > 2025):                  #Condition for given constraints in the question
+        print("Data entered is out of range.")
+        continue
+    if month in (4,6,9,11) and day == 31:                                                                          #Condition for 31 days in a 30 day month
+        print("The given month has only 30 days,\nPlease enter a valid date.")
+        continue
+    elif month == 2 and day >= 29:                                                                                 #Condition for no. of days in February
+        if is_leap(year) and day != 29:
+            print("The given month has only 29 days,\nPlease enter a valid date.")
             continue
-    
-    elif year%4!=0:
-          if month==2:
-              if day>28:
-                  print("Invalid date")
-    
-    else:
-        break
-return_day= day
-return_month=month
-return_year=year
-#Using if-else conditionals for different days and months
-
-if month in [4,6,9,11]:
-    if day<=30:
-        if return_day !=30:
-            return_day+=1
-        else:
-            return_month+=1
-            return_day=1
-
-elif month in [1,3,5,7,8,10]:
-    if day!=31:
-        return_day+=1
-    else:
-        return_month+=1
-        return_day=1
-
-elif month ==12:
-    if day==31:
-        return_day=1
-        return_month=1
-        return_year+=1
-
-elif month==2:
+        elif not is_leap(year):
+            print("The given month has only 28 days,\nPlease enter a valid date.")
+            continue
+    break
+if month == 2:                                                                                                      #Setting no. of days in the given month
     if is_leap(year):
-        if day>29:
-            print("Data entered is out of range.")
-        
-        elif day== 29:
-            return_day=1
-            return_month+=1
-        else:
-            return_day+=1
+        max_days = 29
     else:
-
-        if day==28:
-            return_day=1
-            return_month+=1
-        else:
-            return_day+=1
+        max_days = 28
+elif month in (4,6,9,11):
+    max_days = 30
+else:
+    max_days = 31
+if day == max_days:                                                                                                #Syntax for incrementing the date
+    day = 1
+    if month == 12:
+        month = 1
+        year += 1
+    else:
+        month += 1
+else:
+    day += 1
 #Printing the date.
-return_date=f"{return_day}/{return_month}/{return_year}"
-print("The Next Date is : ", return_date)
+date=f"{day}/{month}/{year}"
+print("The Next Date is : ", date)
 print()
 print("-"*80)
 print()
