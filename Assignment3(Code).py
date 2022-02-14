@@ -37,13 +37,17 @@ while True:
     day= int(input("Enter the Day: "))
     month=int(input("Enter the Month: "))
     year=int(input("Enter the year: "))
-    if (day < 1) or (day > 31) or (month < 1) or (month > 12) or (year < 1800) or (year > 2025):                  #Condition for given constraints in the question
+#Condition for given constraints in the question
+    
+    if (day < 1) or (day > 31) or (month < 1) or (month > 12) or (year < 1800) or (year > 2025):
         print("Data entered is out of range.")
         continue
-    if month in (4,6,9,11) and day == 31:                                                                          #Condition for 31 days in a 30 day month
+#Condition for 31 days in a 30 day month
+    if month in (4,6,9,11) and day == 31:
         print("The given month has only 30 days,\nPlease enter a valid date.")
         continue
-    elif month == 2 and day >= 29:                                                                                 #Condition for no. of days in February
+#Condition for no. of days in February
+    elif month == 2 and day >= 29:
         if is_leap(year) and day != 29:
             print("The given month has only 29 days,\nPlease enter a valid date.")
             continue
@@ -51,7 +55,9 @@ while True:
             print("The given month has only 28 days,\nPlease enter a valid date.")
             continue
     break
-if month == 2:                                                                                                      #Setting no. of days in the given month
+#Fixing number of days in the given month.
+
+if month == 2:
     if is_leap(year):
         max_days = 29
     else:
@@ -60,7 +66,9 @@ elif month in (4,6,9,11):
     max_days = 30
 else:
     max_days = 31
-if day == max_days:                                                                                                #Syntax for incrementing the date
+#Syntax for Next Date.
+
+if day == max_days:
     day = 1
     if month == 12:
         month = 1
