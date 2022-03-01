@@ -1,5 +1,5 @@
 #Q1
-print("Q1 \n")
+print("\nQ1 \n")
 #Defining a function with use of recursion
 def TowerOfHanoi(n , Tower1, Tower3, Tower2):
 	if n == 0:
@@ -13,7 +13,7 @@ print("\n")
 print("-"*80)
 print("\n")
 #Q2
-print("Q2 \n")
+print("\nQ2 \n")
 from tracemalloc import start
 def fact(n):
   fact=1
@@ -60,7 +60,7 @@ pascal_triangle(n)
 print("\n")
 print("-"*80)
 #Q3
-print("Q3 \n")
+print("\nQ3 \n")
 int1 = int(input("Enter the dividend:- "))
 #Loop to make sure int2 != 0(i.e. denominator must not be 0)
 while True:
@@ -128,7 +128,7 @@ print("Hash value of the max value from the above set:- ", hash(max(immutableSet
 print("\n")
 print("-"*80)
 #Q4
-print("\n Q4 \n")
+print("\nQ4 \n")
 class Student:
     def __init__(self, student,rollno):
         self.name = student
@@ -148,7 +148,7 @@ del student1
 print("\n")
 print("-"*80)
 #Q5
-print("\n Q5 \n")
+print("\nQ5 \n")
 class Employee:
     def __init__(self, name, salary):
         self.name = name
@@ -167,16 +167,16 @@ for i in [employee1,employee2,employee3]:
 #a) Updating salary
 employee1.salary = 70000
 print("a) \n")
-print(f" The updated salary of {employee1.name} is {employee1.salary} \n")
+print(f"The updated salary of {employee1.name} is {employee1.salary} \n")
 #b) Deleting a record
-print("b \n")
+print("b) \n")
 print("Record of Viren deleted", end='')
 del employee3
 print("\n")
 print("-"*80)
 
 #Q6
-print("\n Q6 \n")
+print("\nQ6 \n")
 #Defining anagram function
 def anagram(word):
     if len(word)==1:
