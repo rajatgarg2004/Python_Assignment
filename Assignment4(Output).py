@@ -33,38 +33,57 @@ Using Recurssion:-
 
 
 --------------------------------------------------------------------------------
+Q3 
 
- Q3 
-
-Enter 2 numbers:- 
-12 5
+Enter the dividend:- 17
+Enter the divisor:- 5
+Quotient =  3
+Remainder =  2
 a) 
 
 Checking if the quotient and remainder is a callable value or not.
 False
 False
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
 b) 
 
-All of the values are non-zero.
+Both quotient and remainder are non zero. 
+
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
 c) 
 
-The filtered numbers that are greater than 4 are : [6, 6, 7, 7, 7, 8, 8] 
+The filtered numbers that are greater than 4 are : [7, 6, 8, 7, 9, 8] 
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
 
 d) 
 
-Set: {8, 6, 7}
+Set: {8, 9, 6, 7}
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
 e) 
 
-Immutable set:-  frozenset({8, 6, 7})
+Immutable set:-  frozenset({8, 9, 6, 7})
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
 f) 
 
-Hash value of the max value from the above set:-  8
+Hash value of the max value from the above set:-  9
 
 
 --------------------------------------------------------------------------------
