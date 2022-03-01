@@ -37,10 +37,10 @@ Using Recurssion:-
 
 Q3 
 
-Enter the dividend:- 17
+Enter the dividend:- 16
 Enter the divisor:- 3
 Quotient =  5
-Remainder =  2
+Remainder =  1
 a) 
 
 Checking if the quotient and remainder is a callable value or not.
@@ -62,14 +62,14 @@ Both quotient and remainder are non zero.
 
 c) 
 
-The filtered numbers that are greater than 4 are : [9, 6, 10, 7, 11, 8] 
+The filtered numbers that are greater than 4 are : [9, 5, 10, 6, 11, 7] 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
 d) 
 
-Set: {6, 7, 8, 9, 10, 11}
+Set: {5, 6, 7, 9, 10, 11}
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -77,7 +77,7 @@ Set: {6, 7, 8, 9, 10, 11}
 
 e) 
 
-Immutable set:-  frozenset({6, 7, 8, 9, 10, 11})
+Immutable set:-  frozenset({5, 6, 7, 9, 10, 11})
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -108,6 +108,11 @@ Viren has a salary of 60000 rupees
 a) 
 
 The updated salary of Mehak is 70000 
+
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
 
 b) 
 
