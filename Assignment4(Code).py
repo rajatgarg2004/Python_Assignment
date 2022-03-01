@@ -60,46 +60,66 @@ pascal_triangle(n)
 print("\n")
 print("-"*80)
 #Q3
-print("\n Q3 \n")
-int1, int2 = map(int,input("Enter 2 numbers:- \n").split())
-Quotient = int1 // int2
-Remainder = int1 % int2
+int1 = int(input("Enter the dividend:- "))
+#Loop to make sure int2 != 0(i.e. denominator must not be 0)
+while True:
+    int2 = int(input("Enter the divisor:- "))
+    if int2 != 0 and int2>0:
+        break
+    else:
+        print("\nThe divisor must be greater than 0.\nPlease enter the divisor again.")
+Quotient=int1//int2
+Remainder=int1%int2
+
+print("Quotient = ", Quotient)
+print("Remainder = ", Remainder)
 
 #part a)
 print("a) \n")
 print("Checking if the quotient and remainder is a callable value or not.")
 print(callable(Quotient))
 print(callable(Remainder))
-
+print("\n")
+print("- "*50)
+print("\n")
 #part b)
 print("b) \n")
-if (Quotient == 0):
-    print("Quotient is zero.")
-if (Remainder == 0):
-    print("Remainder is zero.")
+if (Quotient == 0 & Remainder == 0):
+    print("Both quotient and remainder are zero. \n")
+if (Quotient == 0 & Remainder !=0):
+    print("Quotient is zero while remainder is non zero. \n")
+if (Quotient != 0 and Remainder == 0):
+    print("Quotient is non zero while remainder is zero. \n")
 if (Quotient != 0 and Remainder != 0):
-    print("All of the values are non-zero.")
+    print("Both quotient and remainder are non zero. \n")
+print("\n")
+print("- "*50)
 print("\n")
 #part c)
 print("c) \n")
-list = [Quotient + 4, Remainder + 4, Remainder + 5, Quotient + 5, Remainder + 5, Quotient + 6, Remainder + 6]
+list = [Quotient + 4, Remainder + 4, Quotient + 5, Remainder + 5, Quotient + 6, Remainder + 6]
 
 result = []
 for i in range(len(list)):
     if list[i] > 4:
         result.append(list[i])
 print(f"The filtered numbers that are greater than 4 are : {result} \n")
-
+print("- "*50)
+print("\n")
 #part d)
 print("d) \n")
 setresult = set(result)
 print("Set:",setresult) 
+print("\n")
+print("- "*50)
 print("\n")
 #part e)
 print("e) \n")
 immutableSet = frozenset(setresult)
 #Frozen Set makes the set immutable.
 print("Immutable set:- ",immutableSet)
+print("\n")
+print("- "*50)
 print("\n")
 #part f)
 print("f) \n")
