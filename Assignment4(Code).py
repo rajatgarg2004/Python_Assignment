@@ -60,6 +60,7 @@ pascal_triangle(n)
 print("\n")
 print("-"*80)
 #Q3
+print("Q3 \n")
 int1 = int(input("Enter the dividend:- "))
 #Loop to make sure int2 != 0(i.e. denominator must not be 0)
 while True:
