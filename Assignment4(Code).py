@@ -168,6 +168,9 @@ for i in [employee1,employee2,employee3]:
 employee1.salary = 70000
 print("a) \n")
 print(f"The updated salary of {employee1.name} is {employee1.salary} \n")
+print("\n")
+print("- "*50)
+print("\n")
 #b) Deleting a record
 print("b) \n")
 print("Record of Viren deleted", end='')
