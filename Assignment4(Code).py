@@ -193,8 +193,8 @@ def anagram(word):
     return list1      
 
 
-George_word=input("George's word:-").lower()
-Barbie_word=input("Barbie's word:-").lower()
+George_word=input("George's word:-").lower().replace(" ", "")
+Barbie_word=input("Barbie's word:-").lower().replace(" ", "")
 other_words=anagram(George_word)
 print("Other possible words are:",other_words)
 print("If Barbie's word is present in the list , then their friendship is real. \n")
