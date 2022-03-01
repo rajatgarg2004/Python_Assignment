@@ -12,6 +12,7 @@ Move disk 1 from rod A to rod C
 --------------------------------------------------------------------------------
 
 
+
 Q2 
 
 Enter the number of rows for pascals triangle 6
@@ -33,11 +34,12 @@ Using Recurssion:-
 
 
 --------------------------------------------------------------------------------
+
 Q3 
 
 Enter the dividend:- 17
-Enter the divisor:- 5
-Quotient =  3
+Enter the divisor:- 3
+Quotient =  5
 Remainder =  2
 a) 
 
@@ -60,14 +62,14 @@ Both quotient and remainder are non zero.
 
 c) 
 
-The filtered numbers that are greater than 4 are : [7, 6, 8, 7, 9, 8] 
+The filtered numbers that are greater than 4 are : [9, 6, 10, 7, 11, 8] 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
 d) 
 
-Set: {8, 9, 6, 7}
+Set: {6, 7, 8, 9, 10, 11}
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -75,7 +77,7 @@ Set: {8, 9, 6, 7}
 
 e) 
 
-Immutable set:-  frozenset({8, 9, 6, 7})
+Immutable set:-  frozenset({6, 7, 8, 9, 10, 11})
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -83,12 +85,12 @@ Immutable set:-  frozenset({8, 9, 6, 7})
 
 f) 
 
-Hash value of the max value from the above set:-  9
+Hash value of the max value from the above set:-  11
 
 
 --------------------------------------------------------------------------------
 
- Q4 
+Q4 
 
 Object created
 The name of the student it Rajat and SID is 21104032.
@@ -97,7 +99,7 @@ Object deleted.
 
 --------------------------------------------------------------------------------
 
- Q5 
+Q5 
 
 The current database is:
 Mehak has a salary of 40000 rupees
@@ -105,15 +107,15 @@ Ashok has a salary of 50000 rupees
 Viren has a salary of 60000 rupees
 a) 
 
- The updated salary of Mehak is 70000 
+The updated salary of Mehak is 70000 
 
-b 
+b) 
 
 Record of Viren deleted
 
 --------------------------------------------------------------------------------
 
- Q6 
+Q6 
 
 George's word:-Names
 Barbie's word:-Means
