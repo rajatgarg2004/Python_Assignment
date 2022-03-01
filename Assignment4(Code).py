@@ -159,8 +159,8 @@ class Employee:
 employee1 = Employee("Mehak", 40000)
 employee2 = Employee("Ashok", 50000)
 employee3 = Employee("Viren", 60000)
-
-print("The current database is:")                                                                       #Printing the initial values
+#Printing the initial values
+print("The current database is:")
 for i in [employee1,employee2,employee3]:
     i.print_data()
 
